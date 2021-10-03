@@ -39,8 +39,8 @@ while True:
     disp12MaxDiff = cv.getTrackbarPos('disp12MaxDiff','disp')
     minDisparity = cv.getTrackbarPos('minDisparity','disp')
             
-    # stereo.setNumDisparities(numDisparities)
-    # stereo.setBlockSize(blockSize)
+    stereo.setNumDisparities(numDisparities)
+    stereo.setBlockSize(blockSize)
     stereo.setPreFilterType(preFilterType)
     stereo.setPreFilterSize(preFilterSize)
     stereo.setPreFilterCap(preFilterCap)
