@@ -8,7 +8,9 @@ def nothing(x):
 img_on_left = cv.imread('python\im0.png',0)
 img_on_right = cv.imread('python\im1.png',0)
 cv.namedWindow('disp',cv.WINDOW_NORMAL)
-cv.resizeWindow('disp',600,600)
+cv.resizeWindow('disp',300,300)
+cv.namedWindow('img',cv.WINDOW_NORMAL)
+cv.resizeWindow('img',600,600)
 
 cv.createTrackbar('numDisparities','disp',1,17,nothing)
 cv.createTrackbar('blockSize','disp',5,50,nothing)
@@ -57,6 +59,6 @@ while True:
     disparity = stereo.compute(img_on_left,img_on_right).astype(np.float32)
     disparity = disparity.astype(np.float32)
     disparity = (disparity/16.0 - minDisparity)/numDisparities
-    cv.imshow("disp",disparity)
+    cv.imshow("img",disparity)
     if cv.waitKey(1) == 27:
         break
