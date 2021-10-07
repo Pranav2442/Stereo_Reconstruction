@@ -188,7 +188,7 @@ pip install matplotlib
 git clone https://github.com/Pranav2442/Stereo_Reconstruction.git
 ~~~  
   
-`python stereo_reconstruction.py`  
+`python Stereo_reconstruction.py`  
 
 1) specify the file paths of the images.
 2) Edit the file name as per your need.
