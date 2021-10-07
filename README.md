@@ -38,7 +38,26 @@ A stereo-pair image contains two views of a scene side by side. One of the views
 <br/><br/>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; a) In the projective transformation parallelism,length and angles are not preserved but it can preserve &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;collinearity and incidence.<br/>
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;b) As the Affine transformation is a special case of the projective transformation,it has the same &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;properties.It preserves parallelism.
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;b) As the Affine transformation is a special case of the projective transformation,it has the same &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;properties.It preserves parallelism. <br/>
+
+## Camera Parameters :- 
+
+Camera parameters are the parameters used in a camera  to describe the mathematical relationship between the 3D coordinates of a point in the scene from which the light comes from and the 2D coordinates of its projection onto the image plane. There are 2 types of camera Parameters Intrinsic and Extrinsic.
+
+### Intrinsic Parameters :-  <br/>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;characterize the transformation from image plane coordinates to pixel coordinates, in each camera.The intrinsic parameters include the focal length, the optical center, also known as the principal point, and the skew coefficient. The camera intrinsic matrix, K, is defined as <br/>
+
+### Extrinsic Parameters :- <br/>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; It defines the location and orientation of the camera with respect to the world frame.<br/>
+
+## Epipolar Geometry :- <br/>
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;The epipolar geometry is the intrinsic projective geometry between two views. It is
+independent of scene structure, and only depends on the cameras’ internal parameters
+and relative pose. 
+
+
+
 
 
 
