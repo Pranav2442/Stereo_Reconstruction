@@ -196,24 +196,12 @@ git clone https://github.com/Pranav2442/Stereo_Reconstruction.git
 
 # Results 
 
-## Bike
-
 |Stereo Image 1| Stereo Image 2 | Disparity Map  | 3d reconstruction |
 | -------- | -------- | --- | -------- |
-| <img src="Images/Bike/im0.png" width="300" height="300" />   | <img src="Images/Bike/im1.png" width="300" height="300" /> |<img src="Disparity Maps/Bike.png" width="300" height="300" />  | <img src="Results/PLY GIF/Bike.gif" width="300" height="300" />       
-## Classroom
-| <img src="Images/CLassroom/Classroom0.png" width="300" height="300" />   | <img src="Images/CLassroom/Classroom1.png" width="300" height="300" /> |<img src="Disparity Maps/ClassRoom.png" width="300" height="300" />  | <img src="Results/PLY GIF/Classroom.gif" width="300" height="300" />  |
-
-## Piano
-
-| <img src="Images/Piano/piano0.png" width="300" height="300" />| <img src="Images/Piano/piano0.png" width="300" height="300" /> |<img src="Disparity Maps/Piano.png" width="300" height="300" />  | <img src="Results/PLY GIF/Piano.gif" width="300" height="300" />       
-
-## hall
-
+| <img src="imp/disparity.png" width="300" height="300" />   | <img src="Images/Bike/im1.png" width="300" height="300" /> |<img src="Disparity Maps/Bike.png" width="300" height="300" />  | <img src="Results/PLY GIF/Bike.gif" width="300" height="300" />       |
+| <img src="Images/CLassroom/Classroom0.png" width="300" height="300" />   | <img src="Images/CLassroom/Classroom1.png" width="300" height="300" /> |<img src="Disparity Maps/ClassRoom.png" width="300" height="300" />  | <img src="Results/PLY GIF/Classroom.gif" width="300" height="300" />       |
+| <img src="Images/Piano/piano0.png" width="300" height="300" />   | <img src="Images/Piano/piano0.png" width="300" height="300" /> |<img src="Disparity Maps/Piano.png" width="300" height="300" />  | <img src="Results/PLY GIF/Piano.gif" width="300" height="300" />       |
 | <img src="Images/Hall/hall0.png" width="300" height="300" />   | <img src="Images/Hall/hall1.png" width="300" height="300" /> |<img src="Disparity Maps/hall.png" width="300" height="300" />  | <img src="Results/PLY GIF/Hall.gif" width="300" height="300" />       |
-
-
-
 
 
 
