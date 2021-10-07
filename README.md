@@ -59,7 +59,150 @@ and relative pose.  It is the representation of 1 camera with repect to other ca
 ## Disparity and Depth :- <br/>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Disparity map refers to the apparent pixel difference or motion between pair of stereo images.Closing and Opening each eye simultaneouly which shows the change in distance. Object which are closer will appear to jump a significant distance and objects which are far will move a little bit.Difference in location of objects in correspoding two images as seen by the left and right eye.Using disparity depth can be obtained.Disparity map is basically a pixel difference between a pair of stereo images.<br/>
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Depth is inversely proportional to disparity, i.e., from the depth estimation equation, we have Z∝1/(xl−xr). As disparity (xl−xr) increases, Z decreases and for lower disparity (xl−xr)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Depth is inversely proportional to disparity, i.e., from the depth estimation equation, we have Z∝1/(xl−xr). As disparity (xl−xr) increases, Z decreases and for lower disparity (xl−xr) <br/>
+
+
+
+## Algorithm to obtain Disparity map:-<br/>
+
+1) Import essential libraries such as opencv and pyplot from matplotlib.<br/>
+<br/>
+2) Take 2 images (left and Right view) as input in Gray format<br/>
+<br/>
+3) We can use StereoBM_create or StereoSGBM_create anyone will do fine according to our requirements.<br/>
+<br/>&emsp;&emsp; a) StereoBM_create takes only two parameters, BM stands for block matching algorithm.<br/>
+<br/>&emsp;&emsp; b) StereoSGBM_create take more than two parameters.<br/>
+<br/>
+4) Refer the calibration.txt file to tune the parameters.<br/>
+<br/>
+5) Use Stereo.compute to obtained the disparity map.
+<br/>
+6) Change the type of the map because it return 16bit signed single channel image,CV_16s containing a disparity map scaled by 16.Hence it is essential to convert it to CV_32F and scale it down 16 times. <br/>
+<br/>
+7) Normalize the disparity map by Number of disparity <br/>
+<br/>
+8) show the disparity map using matplotlib , plt.imshow() <br/>
+<br/>
+<br/> &emsp;&emsp; a) "jet" use to show heat map effect .<br/>
+<br/> &emsp;&emsp; b) "grey" use to show map in Gray color.<br/>
+
+
+## Algorithm of Main Program :- 
+
+1) Import essential libraries such as opencv and pyplot from matplotlib.<br/>
+<br/>
+2) Take 2 images (left and Right view) as input in Gray format<br/>
+<br/>
+3) Find disparity map using StereoSGBM_create which takes many parameters as mentioned in calibration.txt and tune the map according to the requirements.
+<br/>
+<br/> &emsp;&emsp; a) Number of disparities (numDisparities):-<br/>
+&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; Sets the range of disparity values to be searched. The overall range is from minimum disparity value to minimum disparity value + number of disparities. <br/>
+<br/>
+<br/> &emsp;&emsp; b)  Block size (blockSize):-<br/>
+&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; Size of the sliding window used for block matching to find corresponding pixels in a rectified stereo image pair. A higher value indicates a larger window size. <br/>
+<br/>
+<br/> &emsp;&emsp; c)  Pre-Filter Type (preFilterType):-<br/>
+&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;Parameter to decide the type of pre-filtering to be applied to the images before passing to the block matching algorithm. This step enhances the texture information and improves the results of the block matching algorithm. <br/>
+<br/>
+<br/> &emsp;&emsp; d)  Pre-filter size (preFilterSize):-<br/>
+&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;Window size of the filter used in the pre-filtering stage.<br/>
+<br/>
+<br/> &emsp;&emsp; d)  Pre-filter cap (preFilterCap):-<br/>
+&emsp;&emsp; &emsp;&emsp; &emsp;&emsp;Limits the filtered output to a specific value.<br/>
+<br/>
+<br/> &emsp;&emsp; e)  Speckle range (speckleRange) :-<br/>
+&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; Speckles are produced near the boundaries of the objects, where the matching window catches the foreground on one side and the background on the other. To get rid of these artifacts we apply speckle filter.<br/>
+<br/>
+4) Change the type of the map because it return 16bit signed single channel image,CV_16s containing a disparity map scaled by 16.Hence it is essential to convert it to CV_32F and scale it down 16 times. <br/>
+<br/>
+5) Normalize the disparity map by Number of disparity <br/>
+<br/>
+6) Now find the Q  4*4 perspective transformation matrix using calibration.txt<br/>
+&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; a) f=focal length <br/>
+&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; b) b=baseline <br/>
+<br/>
+7) use reprojectimageto3d by passing the parameters such as disparity map and Q matrix.<br/>
+<br/>
+
+8) Now convert the file into PLY format
+
+~~~ bash
+  
+  ply_header = '''ply
+	format ascii 1.0
+	element vertex %(vert_num)d
+	property float x
+	property float y
+	property float z
+	property uchar blue
+	property uchar green
+	property uchar red
+	end_header
+	'''
+with open('bike.ply', 'w') as f:
+	f.write(ply_header %dict(vert_num = len(xyz)))
+	np.savetxt(f, xyz, '%f %f %f %d %d %d')
+  ~~~
+  
+  <br/>
+  
+ 9) Visualize the same file in [MeshLab](https://www.meshlab.net/) software after conversion.<br/>
+<br/>
+
+ 
+ 10) We can also plot it using matplotlib.<br/>
+<br/>
+
+
+
+
+# Libraries Used :-
+
+## Mediapipe
+
+[OpenCV](https://opencv.org/) is the huge open-source library for the computer vision, machine learning, and image processing and now it plays a major role in real-time operation
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Opencv.
+
+```bash
+pip install opencv-python
+```
+## Matplotlib:-
+[Matplotlib](https://matplotlib.org/) is a comprehensive library for creating static, animated, and interactive visualizations in Python.
+
+```bash
+pip install matplotlib
+```
+## How to use :- 
+~~~ bash
+git clone https://github.com/Pranav2442/Stereo_Reconstruction.git
+~~~  
+  
+`python stereo_reconstruction.py`  
+
+1) specify the file paths of the images.
+2) Edit the file name as per your need.
+
+
+# Results 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
