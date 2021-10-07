@@ -63,9 +63,8 @@ and relative pose.  It is the representation of 1 camera with repect to other ca
 
 
 
-## Algorithm to obtain Disparity map:-<br/>
-
-1) Import essential libraries such as opencv and pyplot from matplotlib.<br/>
+## Algorithm to obtain Disparity map:- <br/>
+1)Import essential libraries such as opencv and pyplot from matplotlib.<br/>
 <br/>
 2) Take 2 images (left and Right view) as input in Gray format<br/>
 <br/>
@@ -89,7 +88,7 @@ and relative pose.  It is the representation of 1 camera with repect to other ca
 
 ## Algorithm of Main Program :- 
 
-1) Import essential libraries such as opencv and pyplot from matplotlib.<br/>
+1)Import essential libraries such as opencv and pyplot from matplotlib.<br/>
 <br/>
 2) Take 2 images (left and Right view) as input in Gray format<br/>
 <br/>
@@ -187,6 +186,10 @@ git clone https://github.com/Pranav2442/Stereo_Reconstruction.git
 
 
 # Results 
+
+### Bike
+
+Left Image <img src="Images/Bike/im0.png" heigth="10"> | Right Image <img src="Images/Bike/im1.png"> 
 
 
 
