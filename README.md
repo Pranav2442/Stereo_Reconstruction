@@ -47,17 +47,26 @@ Camera parameters are the parameters used in a camera  to describe the mathemati
 ### Intrinsic Parameters :-  <br/>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;characterize the transformation from image plane coordinates to pixel coordinates, in each camera.The intrinsic parameters include the focal length, the optical center, also known as the principal point, and the skew coefficient. The camera intrinsic matrix, K, is defined as <br/>
 
+<img src="imp/Intrinsic.png" width="300" height="300" /> 
+
 ### Extrinsic Parameters :- <br/>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; It defines the location and orientation of the camera with respect to the world frame.<br/>
-
+<img src="imp/Extrinsic.png" width="300" height="300" />
 ## Epipolar Geometry :- <br/>
+
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;The epipolar geometry is the intrinsic projective geometry between two views. It is
 independent of scene structure, and only depends on the cameras’ internal parameters
 and relative pose.  It is the representation of 1 camera with repect to other camera.Every scene lies on unique epipolar plane.<br/>
 
+<img src="imp/epipolar.png" width="300" height="300" />
+
+
+
 ## Disparity and Depth :- <br/>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Disparity map refers to the apparent pixel difference or motion between pair of stereo images.Closing and Opening each eye simultaneouly which shows the change in distance. Object which are closer will appear to jump a significant distance and objects which are far will move a little bit.Difference in location of objects in correspoding two images as seen by the left and right eye.Using disparity depth can be obtained.Disparity map is basically a pixel difference between a pair of stereo images.<br/>
+
+<img src="imp/disparity.png" width="300" height="300" /> 
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Depth is inversely proportional to disparity, i.e., from the depth estimation equation, we have Z∝1/(xl−xr). As disparity (xl−xr) increases, Z decreases and for lower disparity (xl−xr) <br/>
 
