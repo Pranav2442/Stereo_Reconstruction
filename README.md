@@ -67,6 +67,7 @@ and relative pose.  It is the representation of 1 camera with repect to other ca
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Disparity map refers to the apparent pixel difference or motion between pair of stereo images.Closing and Opening each eye simultaneouly which shows the change in distance. Object which are closer will appear to jump a significant distance and objects which are far will move a little bit.Difference in location of objects in correspoding two images as seen by the left and right eye.Using disparity depth can be obtained.Disparity map is basically a pixel difference between a pair of stereo images.<br/>
 
 <img src="imp/disparity.png" width="300" height="300" /> 
+<img src="Disparity Maps/Bike.png" width="300" height="300" />
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Depth is inversely proportional to disparity, i.e., from the depth estimation equation, we have Z∝1/(xl−xr). As disparity (xl−xr) increases, Z decreases and for lower disparity (xl−xr) <br/>
 
@@ -197,9 +198,9 @@ git clone https://github.com/Pranav2442/Stereo_Reconstruction.git
 
 # Results 
 
-|Stereo Image 1| Stereo Image 2 | Disparity Map  | 3d reconstruction |
-| -------- | -------- | --- | -------- |
-| <img src="imp/disparity.png" width="300" height="300" />   | <img src="Images/Bike/im1.png" width="300" height="300" /> |<img src="Disparity Maps/Bike.png" width="300" height="300" />  | <img src="Results/PLY GIF/Bike.gif" width="300" height="300" />       |
+|Stereo Image 1| Stereo Image 2 | Disparity Map  | 3D reconstruction |
+| -------- | -------- | -------- | -------- |
+| <img src="Images/Bike/im0.png" width="300" height="300" />   | <img src="Images/Bike/im1.png" width="300" height="300" /> |<img src="Disparity Maps/Bike.png" width="300" height="300" />  | <img src="Results/PLY GIF/Bike.gif" width="300" height="300" />       |
 | <img src="Images/CLassroom/Classroom0.png" width="300" height="300" />   | <img src="Images/CLassroom/Classroom1.png" width="300" height="300" /> |<img src="Disparity Maps/ClassRoom.png" width="300" height="300" />  | <img src="Results/PLY GIF/Classroom.gif" width="300" height="300" />       |
 | <img src="Images/Piano/piano0.png" width="300" height="300" />   | <img src="Images/Piano/piano0.png" width="300" height="300" /> |<img src="Disparity Maps/Piano.png" width="300" height="300" />  | <img src="Results/PLY GIF/Piano.gif" width="300" height="300" />       |
 | <img src="Images/Hall/hall0.png" width="300" height="300" />   | <img src="Images/Hall/hall1.png" width="300" height="300" /> |<img src="Disparity Maps/hall.png" width="300" height="300" />  | <img src="Results/PLY GIF/Hall.gif" width="300" height="300" />       |
