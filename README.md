@@ -36,7 +36,7 @@ A stereo-pair image contains two views of a scene side by side. One of the views
 
 ## Difference Between Projective and Affine Transformations :- <br/>
 <br/><br/>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; a) In the projective transformation parallelism,length and angles are not preserved but it can preserve &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;collinearity and incidence.<br/>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; a) In the projective transformation parallelism,length and angles are not preserved but it can preserve collinearity and incidence.<br/>
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;b) As the Affine transformation is a special case of the projective transformation,it has the same &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;properties.It preserves parallelism. <br/>
 
