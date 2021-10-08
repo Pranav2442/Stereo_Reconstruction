@@ -11,7 +11,7 @@ The general idea of the stereo reconstruction algorithm which reconstructs depth
 
 A stereo-pair image contains two views of a scene side by side. One of the views is intended for the left eye and the other for the right eye. 
 
-##Types of Projections:-
+## Types of Projections:-
 
 1) Eucledian or Isometric transformation:-<br/>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Whenever Image is transformed or rotated around any point is called as Eucledian transfrom.Eucledian transform is a subset of affine transform.
