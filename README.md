@@ -211,6 +211,7 @@ git clone https://github.com/Pranav2442/Stereo_Reconstruction.git
 | <img src="Images/CLassroom/Classroom0.png" width="300" height="300" />   | <img src="Images/CLassroom/Classroom1.png" width="300" height="300" /> |<img src="Disparity Maps/ClassRoom.png" width="300" height="300" />  | <img src="Results/PLY GIF/Classroom.gif" width="300" height="300" />       |
 | <img src="Images/Piano/piano0.png" width="300" height="300" />   | <img src="Images/Piano/piano0.png" width="300" height="300" /> |<img src="Disparity Maps/Piano.png" width="300" height="300" />  | <img src="Results/PLY GIF/Piano.gif" width="300" height="300" />       |
 | <img src="Images/Hall/hall0.png" width="300" height="300" />   | <img src="Images/Hall/hall1.png" width="300" height="300" /> |<img src="Disparity Maps/hall.png" width="300" height="300" />  | <img src="Results/PLY GIF/Hall.gif" width="300" height="300" />       |
+| <img src="Images/Chair/c0.png" width="300" height="300" />   | <img src="Images/Chair/c1.png" width="300" height="300" /> |<img src="Disparity Maps/Chair.png" width="300" height="300" />  | <img src="Results/PLY GIF/chair.gif" width="300" height="300" />       |
 
 
 
