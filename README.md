@@ -14,7 +14,8 @@ A stereo-pair image contains two views of a scene side by side. One of the views
 ## Types of Projections:-
 
 ### 1) Eucledian or Isometric transformation:-<br/>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Whenever Image is transformed or rotated around any point is called as Eucledian transfrom.Eucledian transform is a subset of affine transform.
+
+Whenever Image is transformed or rotated around any point is called as Eucledian transfrom.Eucledian transform is a subset of affine transform.
 
 &emsp;&emsp;&emsp;a) Distance is Preserved.<br/>
 
