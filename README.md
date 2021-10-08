@@ -36,7 +36,7 @@ A stereo-pair image contains two views of a scene side by side. One of the views
 
 ## Difference Between Projective and Affine Transformations :- <br/>
 <br/><br/>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; a) In the projective transformation parallelism,length and angles are not preserved but it can preserve collinearity and incidence.<br/>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; a) In the projective transformation parallelism,length and angles are not preserved but it can preserve <br/> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;collinearity and incidence.<br/>
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;b) As the Affine transformation is a special case of the projective transformation,it has the same &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;properties.It preserves parallelism. <br/>
 
@@ -83,7 +83,7 @@ and relative pose.  It is the representation of 1 camera with repect to other ca
 <br/>
 4) Refer the calibration.txt file to tune the parameters.<br/>
 <br/>
-5) Use Stereo.compute to obtained the disparity map.
+5) Use Stereo.compute to obtained the disparity map.<br/>
 <br/>
 6) Change the type of the map because it return 16bit signed single channel image,CV_16s containing a disparity map scaled by 16.Hence it is essential to convert it to CV_32F and scale it down 16 times. <br/>
 <br/>
@@ -104,7 +104,8 @@ and relative pose.  It is the representation of 1 camera with repect to other ca
 3) Find disparity map using StereoSGBM_create which takes many parameters as mentioned in calibration.txt and tune the map according to the requirements.
 <br/>
 <br/> &emsp;&emsp; a) Number of disparities (numDisparities):-<br/>
-&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; Sets the range of disparity values to be searched. The overall range is from minimum disparity value to minimum disparity value + number of disparities. <br/>
+&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; Sets the range of disparity values to be searched. The overall range is from minimum disparity value to minimum 
+disparity value + number of disparities. <br/>
 <br/>
 <br/> &emsp;&emsp; b)  Block size (blockSize):-<br/>
 &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; Size of the sliding window used for block matching to find corresponding pixels in a rectified stereo image pair. A higher value indicates a larger window size. <br/>
