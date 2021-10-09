@@ -120,7 +120,7 @@ Depth is inversely proportional to disparity, i.e., from the depth estimation eq
 <br/>
 8) Now convert the file into PLY format<br/>
 <br/>
-9) Visualize the same file in [MeshLab](https://www.meshlab.net/) software after conversion.<br/>
+9) Visualize the same file in Meshlab software after conversion.<br/>
 <br/>
 
 10)We can also plot it using matplotlib.<br/>
