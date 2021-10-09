@@ -192,12 +192,12 @@ pip install opencv-python
 ```bash
 pip install matplotlib
 ```
-## How to use :- 
+## How to run the code :- 
 ~~~ bash
 git clone https://github.com/Pranav2442/Stereo_Reconstruction.git
 ~~~  
   
-`python Stereo_reconstruction.py`  
+  
 
 1) specify the file paths of the images.
 2) Edit the file name as per your need.
