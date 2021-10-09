@@ -111,6 +111,24 @@ Depth is inversely proportional to disparity, i.e., from the depth estimation eq
 <br/>
 3) Find disparity map using StereoSGBM_create which takes many parameters as mentioned in calibration.txt and tune the map according to the requirements.
 <br/>
+4) Change the type of the map because it return 16bit signed single channel image,CV_16s containing a disparity map scaled by 16.Hence it is essential to convert it to CV_32F and scale it down 16 times. <br/>
+<br/>
+5) Normalize the disparity map by Number of disparity <br/>
+<br/>
+6) Now find the Q  4*4 perspective transformation matrix using calibration.txt<br/>
+<!--&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; a) f=focal length <br/>
+&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; b) b=baseline <br/>-->
+<br/>
+7) use reprojectimageto3d by passing the parameters such as disparity map and Q matrix.<br/>
+<br/>
+8) Now convert the file into PLY format<br/>
+<br/>
+9) Visualize the same file in [MeshLab](https://www.meshlab.net/) software after conversion.<br/>
+<br/>
+
+10)We can also plot it using matplotlib.<br/>
+<br/>
+
 <!--<br/> &emsp;&emsp; a) Number of disparities (numDisparities):-<br/>
 &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; Sets the range of disparity values to be searched. The overall range is from minimum disparity value to minimum 
 disparity value + number of disparities. <br/>
@@ -130,23 +148,6 @@ disparity value + number of disparities. <br/>
 <br/> &emsp;&emsp; e)  Speckle range (speckleRange) :-<br/>
 &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; Speckles are produced near the boundaries of the objects, where the matching window catches the foreground on one side and the background on the other. To get rid of these artifacts we apply speckle filter.<br/>
 <br/>-->
-4) Change the type of the map because it return 16bit signed single channel image,CV_16s containing a disparity map scaled by 16.Hence it is essential to convert it to CV_32F and scale it down 16 times. <br/>
-<br/>
-5) Normalize the disparity map by Number of disparity <br/>
-<br/>
-6) Now find the Q  4*4 perspective transformation matrix using calibration.txt<br/>
-&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; a) f=focal length <br/>
-&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; b) b=baseline <br/>
-<br/>
-7) use reprojectimageto3d by passing the parameters such as disparity map and Q matrix.<br/>
-<br/>
-8) Now convert the file into PLY format<br/>
-<br/>
-9) Visualize the same file in [MeshLab](https://www.meshlab.net/) software after conversion.<br/>
-<br/>
-
-10)We can also plot it using matplotlib.<br/>
-<br/>
 
 <!--~~~ bash
   
