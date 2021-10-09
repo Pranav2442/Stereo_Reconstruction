@@ -142,6 +142,11 @@ disparity value + number of disparities. <br/>
 <br/>
 8) Now convert the file into PLY format<br/>
 <br/>
+9) Visualize the same file in [MeshLab](https://www.meshlab.net/) software after conversion.<br/>
+<br/>
+
+10)We can also plot it using matplotlib.<br/>
+<br/>
 
 <!--~~~ bash
   
@@ -163,12 +168,6 @@ with open('bike.ply', 'w') as f:
   
 <br/>
  -->
-9) Visualize the same file in [MeshLab](https://www.meshlab.net/) software after conversion.<br/>
-<br/>
-
- 
-10) We can also plot it using matplotlib.<br/>
-<br/>
 
 
 
