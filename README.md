@@ -7,9 +7,6 @@
 
 The general idea of the stereo reconstruction algorithm which reconstructs depth information from two camera views. 
 
-## Stereo Pair
-
-A stereo-pair image contains two views of a scene side by side. One of the views is intended for the left eye and the other for the right eye. 
 
 <!--## Types of Projections:-
 
