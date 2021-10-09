@@ -11,7 +11,7 @@ The general idea of the stereo reconstruction algorithm which reconstructs depth
 
 A stereo-pair image contains two views of a scene side by side. One of the views is intended for the left eye and the other for the right eye. 
 
-## Types of Projections:-
+<!--## Types of Projections:-
 
 ### 1) Eucledian or Isometric transformation:-<br/>
 
@@ -57,8 +57,8 @@ Characterize the transformation from image plane coordinates to pixel coordinate
 ### Extrinsic Parameters :- <br/>
 
 It defines the location and orientation of the camera with respect to the world frame.<br/>
-<img src="imp/Extrinsic.png" width="300" height="300" />
-## Epipolar Geometry :- <br/>
+<img src="imp/Extrinsic.png" width="300" height="300" />-->
+<!--## Epipolar Geometry :- <br/>
 
 
 The epipolar geometry is the intrinsic projective geometry between two views. It is
@@ -76,11 +76,11 @@ Disparity map refers to the apparent pixel difference or motion between pair of 
 <img src="imp/disparity.png" width="300" height="300" /> 
 <img src="Disparity Maps/Bike.png" width="300" height="300" />
 
-Depth is inversely proportional to disparity, i.e., from the depth estimation equation, we have Z∝1/(xl−xr). As disparity (xl−xr) increases, Z decreases and for lower disparity (xl−xr) <br/>
+Depth is inversely proportional to disparity, i.e., from the depth estimation equation, we have Z∝1/(xl−xr). As disparity (xl−xr) increases, Z decreases and for lower disparity (xl−xr) <br/>-->
 
 
 
-## Algorithm to obtain Disparity map:- <br/>
+<!--## Algorithm to obtain Disparity map:- <br/>
 1)Import essential libraries such as opencv and pyplot from matplotlib.<br/>
 <br/>
 2) Take 2 images (left and Right view) as input in Gray format<br/>
@@ -100,7 +100,7 @@ Depth is inversely proportional to disparity, i.e., from the depth estimation eq
 8) show the disparity map using matplotlib , plt.imshow() <br/>
 <br/>
 <br/> &emsp;&emsp; a) "jet" use to show heat map effect .<br/>
-<br/> &emsp;&emsp; b) "grey" use to show map in Gray color.<br/>
+<br/> &emsp;&emsp; b) "grey" use to show map in Gray color.<br/>-->
 
 
 ## Algorithm of Main Program :- 
@@ -140,8 +140,8 @@ disparity value + number of disparities. <br/>
 <br/>
 7) use reprojectimageto3d by passing the parameters such as disparity map and Q matrix.<br/>
 <br/>
-
-8) Now convert the file into PLY format
+8) Now convert the file into PLY format<br/>
+<br/>
 
 ~~~ bash
   
@@ -161,13 +161,13 @@ with open('bike.ply', 'w') as f:
 	np.savetxt(f, xyz, '%f %f %f %d %d %d')
   ~~~
   
-  <br/>
-  
- 9) Visualize the same file in [MeshLab](https://www.meshlab.net/) software after conversion.<br/>
+<br/>
+ 
+9) Visualize the same file in [MeshLab](https://www.meshlab.net/) software after conversion.<br/>
 <br/>
 
  
- 10) We can also plot it using matplotlib.<br/>
+10) We can also plot it using matplotlib.<br/>
 <br/>
 
 
@@ -216,9 +216,9 @@ git clone https://github.com/Pranav2442/Stereo_Reconstruction.git
 
 
 
-### Video
+<!--### Video
 
-https://user-images.githubusercontent.com/74892541/136580053-341a3c40-34ff-4c78-b661-b45df25f9ec2.mp4
+<!--https://user-images.githubusercontent.com/74892541/136580053-341a3c40-34ff-4c78-b661-b45df25f9ec2.mp4-->
 
 
 
