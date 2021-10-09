@@ -111,7 +111,7 @@ Depth is inversely proportional to disparity, i.e., from the depth estimation eq
 <br/>
 3) Find disparity map using StereoSGBM_create which takes many parameters as mentioned in calibration.txt and tune the map according to the requirements.
 <br/>
-<br/> &emsp;&emsp; a) Number of disparities (numDisparities):-<br/>
+<!--<br/> &emsp;&emsp; a) Number of disparities (numDisparities):-<br/>
 &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; Sets the range of disparity values to be searched. The overall range is from minimum disparity value to minimum 
 disparity value + number of disparities. <br/>
 <br/>
@@ -129,7 +129,7 @@ disparity value + number of disparities. <br/>
 <br/>
 <br/> &emsp;&emsp; e)  Speckle range (speckleRange) :-<br/>
 &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; Speckles are produced near the boundaries of the objects, where the matching window catches the foreground on one side and the background on the other. To get rid of these artifacts we apply speckle filter.<br/>
-<br/>
+<br/>-->
 4) Change the type of the map because it return 16bit signed single channel image,CV_16s containing a disparity map scaled by 16.Hence it is essential to convert it to CV_32F and scale it down 16 times. <br/>
 <br/>
 5) Normalize the disparity map by Number of disparity <br/>
@@ -143,7 +143,7 @@ disparity value + number of disparities. <br/>
 8) Now convert the file into PLY format<br/>
 <br/>
 
-~~~ bash
+<!--~~~ bash
   
   ply_header = '''ply
 	format ascii 1.0
@@ -162,7 +162,7 @@ with open('bike.ply', 'w') as f:
   ~~~
   
 <br/>
- 
+ -->
 9) Visualize the same file in [MeshLab](https://www.meshlab.net/) software after conversion.<br/>
 <br/>
 
@@ -173,7 +173,7 @@ with open('bike.ply', 'w') as f:
 
 
 
-# Libraries Used :-
+<!--# Libraries Used :-
 
 ## Opencv
 
@@ -191,7 +191,7 @@ pip install opencv-python
 
 ```bash
 pip install matplotlib
-```
+```-->
 ## How to run the code :- 
 ~~~ bash
 git clone https://github.com/Pranav2442/Stereo_Reconstruction.git
@@ -207,11 +207,11 @@ git clone https://github.com/Pranav2442/Stereo_Reconstruction.git
 
 |Stereo Image 1| Stereo Image 2 | Disparity Map  | 3D reconstruction |
 | -------- | -------- | -------- | -------- |
-| <img src="Images/Bike/im0.png" width="300" height="300" />   | <img src="Images/Bike/im1.png" width="300" height="300" /> |<img src="Disparity Maps/Bike.png" width="300" height="300" />  | <img src="Results/PLY GIF/Bike.gif" width="300" height="300" />       |
-| <img src="Images/CLassroom/Classroom0.png" width="300" height="300" />   | <img src="Images/CLassroom/Classroom1.png" width="300" height="300" /> |<img src="Disparity Maps/ClassRoom.png" width="300" height="300" />  | <img src="Results/PLY GIF/Classroom.gif" width="300" height="300" />       |
-| <img src="Images/Piano/piano0.png" width="300" height="300" />   | <img src="Images/Piano/piano0.png" width="300" height="300" /> |<img src="Disparity Maps/Piano.png" width="300" height="300" />  | <img src="Results/PLY GIF/Piano.gif" width="300" height="300" />       |
-| <img src="Images/Hall/hall0.png" width="300" height="300" />   | <img src="Images/Hall/hall1.png" width="300" height="300" /> |<img src="Disparity Maps/hall.png" width="300" height="300" />  | <img src="Results/PLY GIF/Hall.gif" width="300" height="300" />       |
-| <img src="Images/Chair/c0.png" width="300" height="300" />   | <img src="Images/Chair/c1.png" width="300" height="300" /> |<img src="Disparity Maps/Chair.png" width="300" height="300" />  | <img src="Results/PLY GIF/chair.gif" width="300" height="300" />       |
+| <img src="Images/Bike/im0.png" width="200" height="200" />   | <img src="Images/Bike/im1.png" width="200" height="200" /> |<img src="Disparity Maps/Bike.png" width="200" height="200" />  | <img src="Results/PLY GIF/Bike.gif" width="200" height="200" />       |
+| <img src="Images/CLassroom/Classroom0.png" width="200" height="200" />   | <img src="Images/CLassroom/Classroom1.png" width="200" height="200" /> |<img src="Disparity Maps/ClassRoom.png" width="200" height="200" />  | <img src="Results/PLY GIF/Classroom.gif" width="200" height="200" />       |
+| <img src="Images/Piano/piano0.png" width="200" height="200" />   | <img src="Images/Piano/piano0.png" width="200" height="200" /> |<img src="Disparity Maps/Piano.png" width="200" height="200" />  | <img src="Results/PLY GIF/Piano.gif" width="200" height="200" />       |
+| <img src="Images/Hall/hall0.png" width="200" height="200" />   | <img src="Images/Hall/hall1.png" width="200" height="200" /> |<img src="Disparity Maps/hall.png" width="200" height="200" />  | <img src="Results/PLY GIF/Hall.gif" width="200" height="200" />       |
+| <img src="Images/Chair/c0.png" width="200" height="200" />   | <img src="Images/Chair/c1.png" width="200" height="200" /> |<img src="Disparity Maps/Chair.png" width="200" height="200" />  | <img src="Results/PLY GIF/chair.gif" width="200" height="200" />       |
 
 
 
