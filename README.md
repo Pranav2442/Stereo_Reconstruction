@@ -106,7 +106,7 @@ Depth is inversely proportional to disparity, i.e., from the depth estimation eq
 <br/>
 2) Take 2 images (left and Right view) as input in Gray format<br/>
 <br/>
-3) Find disparity map using StereoSGBM_create which takes many parameters as mentioned in calibration.txt and tune the map according to the requirements.
+3) Find disparity map using StereoSGBM_create which takes many parameters as mentioned in calibration.txt and tune the map according to the requirements.<br/>
 <br/>
 4) Change the type of the map because it return 16bit signed single channel image,CV_16s containing a disparity map scaled by 16.Hence it is essential to convert it to CV_32F and scale it down 16 times. <br/>
 <br/>
