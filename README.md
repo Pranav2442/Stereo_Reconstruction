@@ -55,7 +55,7 @@ Characterize the transformation from image plane coordinates to pixel coordinate
 
 It defines the location and orientation of the camera with respect to the world frame.<br/>
 <img src="imp/Extrinsic.png" width="300" height="300" />-->
-<!--## Epipolar Geometry :- <br/>
+## Epipolar Geometry :- <br/>
 
 
 The epipolar geometry is the intrinsic projective geometry between two views. It is
