@@ -11,6 +11,8 @@ The general idea of the stereo reconstruction algorithm which reconstructs depth
 
 A stereo-pair image contains two views of a scene side by side. One of the views is intended for the left eye and the other for the right eye.
 
+<img src="imp/b.png" width="500" height="200" />
+
 <!--## Types of Projections:-
 
 ### 1) Eucledian or Isometric transformation:-<br/>
