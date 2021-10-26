@@ -3,7 +3,7 @@
 
 
 
-# Stereo_Reconstruction
+# Stereo_Reconstruction <img src="Results/PLY GIF/Bike.gif" width="40" height="40" /> <img src="Results/PLY GIF/Classroom.gif" width="40" height="40" /> <img src="Results/PLY GIF/Piano.gif" width="40" height="40" /> <img src="Results/PLY GIF/Hall.gif" width="40" height="40" />  <img src="Results/PLY GIF/chair.gif" width="40" height="40" />
 
 The general idea of the stereo reconstruction algorithm which reconstructs depth information from two camera views. 
 
