@@ -257,7 +257,7 @@ git clone https://github.com/Pranav2442/Stereo_Reconstruction.git
 
 # Results 
 
-|Stereo Image 1| Stereo Image 2 | Disparity Map  | 3D reconstruction |
+| Left View | Right View | Disparity Map  | 3D Reconstruction |
 | -------- | -------- | -------- | -------- |
 | <img src="Images/Bike/im0.png" width="200" height="200" />   | <img src="Images/Bike/im1.png" width="200" height="200" /> |<img src="Disparity Maps/Bike.png" width="200" height="200" />  | <img src="Results/PLY GIF/Bike.gif" width="200" height="200" />       |
 | <img src="Images/CLassroom/Classroom0.png" width="200" height="200" />   | <img src="Images/CLassroom/Classroom1.png" width="200" height="200" /> |<img src="Disparity Maps/ClassRoom.png" width="200" height="200" />  | <img src="Results/PLY GIF/Classroom.gif" width="200" height="200" />       |
