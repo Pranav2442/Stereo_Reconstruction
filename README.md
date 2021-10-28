@@ -15,6 +15,35 @@ A stereo-pair image contains two views of a scene side by side. One of the views
 
 
 
+## How to run the code :- 
+
+
+~~~ bash
+git clone https://github.com/Pranav2442/Stereo_Reconstruction.git
+~~~  
+  
+  
+
+1) specify the file paths of the images in <code> img_on_left </code>  and <code> img_on right </code>.
+2) Edit the file name as per your need.
+
+
+# Results 
+
+| Left View | Right View | Disparity Map  | 3D Reconstruction |
+| -------- | -------- | -------- | -------- |
+| <img src="Images/Bike/im0.png" width="200" height="200" />   | <img src="Images/Bike/im1.png" width="200" height="200" /> |<img src="Disparity Maps/Bike.png" width="200" height="200" />  | <img src="Results/PLY GIF/Bike.gif" width="200" height="200" />       |
+| <img src="Images/CLassroom/Classroom0.png" width="200" height="200" />   | <img src="Images/CLassroom/Classroom1.png" width="200" height="200" /> |<img src="Disparity Maps/ClassRoom.png" width="200" height="200" />  | <img src="Results/PLY GIF/Classroom.gif" width="200" height="200" />       |
+| <img src="Images/Piano/piano0.png" width="200" height="200" />   | <img src="Images/Piano/piano0.png" width="200" height="200" /> |<img src="Disparity Maps/Piano.png" width="200" height="200" />  | <img src="Results/PLY GIF/Piano.gif" width="200" height="200" />       |
+| <img src="Images/Hall/hall0.png" width="200" height="200" />   | <img src="Images/Hall/hall1.png" width="200" height="200" /> |<img src="Disparity Maps/hall.png" width="200" height="200" />  | <img src="Results/PLY GIF/Hall.gif" width="200" height="200" />       |
+| <img src="Images/Chair/c0.png" width="200" height="200" />   | <img src="Images/Chair/c1.png" width="200" height="200" /> |<img src="Disparity Maps/Chair.png" width="200" height="200" />  | <img src="Results/PLY GIF/chair.gif" width="200" height="200" />       |
+
+
+
+
+
+
+
 <!--## Types of Projections:-
 
 ### 1) Eucledian or Isometric transformation:-<br/>
@@ -242,7 +271,7 @@ For [colormap](https://matplotlib.org/stable/tutorials/colors/colormaps.html)
 
 For [3D plots](https://matplotlib.org/2.0.2/mpl_toolkits/mplot3d/tutorial.html)
 
-## How to run the code :- 
+<!--## How to run the code :- 
 
 
 ~~~ bash
@@ -263,7 +292,7 @@ git clone https://github.com/Pranav2442/Stereo_Reconstruction.git
 | <img src="Images/CLassroom/Classroom0.png" width="200" height="200" />   | <img src="Images/CLassroom/Classroom1.png" width="200" height="200" /> |<img src="Disparity Maps/ClassRoom.png" width="200" height="200" />  | <img src="Results/PLY GIF/Classroom.gif" width="200" height="200" />       |
 | <img src="Images/Piano/piano0.png" width="200" height="200" />   | <img src="Images/Piano/piano0.png" width="200" height="200" /> |<img src="Disparity Maps/Piano.png" width="200" height="200" />  | <img src="Results/PLY GIF/Piano.gif" width="200" height="200" />       |
 | <img src="Images/Hall/hall0.png" width="200" height="200" />   | <img src="Images/Hall/hall1.png" width="200" height="200" /> |<img src="Disparity Maps/hall.png" width="200" height="200" />  | <img src="Results/PLY GIF/Hall.gif" width="200" height="200" />       |
-| <img src="Images/Chair/c0.png" width="200" height="200" />   | <img src="Images/Chair/c1.png" width="200" height="200" /> |<img src="Disparity Maps/Chair.png" width="200" height="200" />  | <img src="Results/PLY GIF/chair.gif" width="200" height="200" />       |
+| <img src="Images/Chair/c0.png" width="200" height="200" />   | <img src="Images/Chair/c1.png" width="200" height="200" /> |<img src="Disparity Maps/Chair.png" width="200" height="200" />  | <img src="Results/PLY GIF/chair.gif" width="200" height="200" />       |-->
 
 
 
