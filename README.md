@@ -106,33 +106,9 @@ and relative pose.  It is the representation of 1 camera with repect to other ca
 
 Disparity map refers to the apparent pixel difference or motion between pair of stereo images.Closing and Opening each eye simultaneouly which shows the change in distance. Object which are closer will appear to jump a significant distance and objects which are far will move a little bit.Difference in location of objects in correspoding two images as seen by the left and right eye.Using disparity depth can be obtained.Disparity map is basically a pixel difference between a pair of stereo images.<br/>
 
-<img src="imp/disparity.png" width="300" height="300" /> 
+
 <img src="Disparity Maps/Bike.png" width="300" height="300" />
 
-depth of particular poit in image is distance b/w camera centre and its corresponding real world point.
-
-Depth is inversely proportional to disparity, i.e., from the depth estimation equation, we have
-
-**Z∝1/(xl−xr)**
-
-As disparity (xl−xr) increases, Z decreases and for lower disparity (xl−xr) <br/>
-## 3D reprojection 
-to  convert 3D points(X,Y,Z) into 2D image coordinates(U,V) for this we use internsic camera matrix.
-
-
-![image](https://user-images.githubusercontent.com/92177410/136624644-75b0dbe7-7f8d-494d-bd6e-46dc7200520d.png)
-
-
-here Fx and Fy are focal length 
-
-
-S skew of camera 
-
-
-X0 and Y0 are camera offsets
-
-
-we pass image point and disparity(from which depth(z) of points can be calculated) into the calibration matrix to obtain 3D real world coordinates this process is known as 3D reprojection.
 
 
 
