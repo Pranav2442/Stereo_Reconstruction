@@ -24,7 +24,7 @@ git clone https://github.com/Pranav2442/Stereo_Reconstruction.git
   
   
 
-1) specify the file paths of the images in <code> img_on_left </code>  and <code> img_on right </code>.
+1) Specify the file paths of the images in <code> img_on_left </code>  and <code> img_on right </code>.
 2) Edit the file name as per your need.
 
 
@@ -256,7 +256,7 @@ git clone https://github.com/Pranav2442/Stereo_Reconstruction.git
   
   
 
-1) specify the file paths of the images in <code> img_on_left </code>  and <code> img_on right </code>.
+1) Specify the file paths of the images in <code> img_on_left </code>  and <code> img_on right </code>.
 2) Edit the file name as per your need.
 
 
