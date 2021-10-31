@@ -161,11 +161,11 @@ Disparity map refers to the apparent pixel difference or motion between pair of 
 <!--&emsp;&emsp; &emsp;&emsp; &emsp;&emsp; a) f=focal length <br/>
 &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; b) b=baseline <br/>-->
 <br/>
-7) use <code>reprojectimageto3d</code> by passing the parameters such as disparity map and Q matrix.<br/>
+7) Use <code>reprojectimageto3d</code> by passing the parameters such as disparity map and Q matrix.<br/>
 <br/>
 8) Now convert the file into <code>PLY</code> format<br/>
 <br/>
-9) Visualize the same file in <code>Meshlab</code> software after conversion.<br/>
+9) Visualize the same file in Meshlab software after conversion.<br/>
 <br/>
 
 10)We can also plot it using **matplotlib**.<br/>
